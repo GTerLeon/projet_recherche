@@ -1,0 +1,155 @@
+================================================================================
+--------------------------------------------------------------------------------
+|                         CROSSWALK REPRODUCTION SUITE                         |
+--------------------------------------------------------------------------------
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment start time: 2024-02-07 16:29:18.098637
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Repeating experiment config: 
+'experiments/infmax_twitter_deepwalk_fairwalk.yml' 
+5 times and averaging results
+================================================================================
+                        Performing experiment trial 1/5
+================================================================================
+number of attributed ids: 3753, ids with edges: 3753, number of links with attributes: 13986
+using weights from file.
+loaded graph: twitter
+saved graph
+graph shape, num_nodes=3753, num_edges=13986
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.03666667640209198
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_13_infmax_twitter_deepwalk_fairwalk/embeddings/emb_0_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 1.2789768185451638
+Infected nodes fraction per group (%):
+    Group 0:1.3546798378229141
+    Group 1:1.1615244671702385
+    Group 2:2.688172087073326
+Disparity: 0.46068483681985084
+================================================================================
+                        Performing experiment trial 2/5
+================================================================================
+number of attributed ids: 3753, ids with edges: 3753, number of links with attributes: 13986
+using weights from file.
+loaded graph: twitter
+saved graph
+graph shape, num_nodes=3753, num_edges=13986
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.03666667640209198
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_13_infmax_twitter_deepwalk_fairwalk/embeddings/emb_1_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 1.385558220090594
+Infected nodes fraction per group (%):
+    Group 0:0.7389162667095661
+    Group 1:1.524500921368599
+    Group 2:2.150537632405758
+Disparity: 0.33352667703243966
+================================================================================
+                        Performing experiment trial 3/5
+================================================================================
+number of attributed ids: 3753, ids with edges: 3753, number of links with attributes: 13986
+using weights from file.
+loaded graph: twitter
+saved graph
+graph shape, num_nodes=3753, num_edges=13986
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.03666667640209198
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_13_infmax_twitter_deepwalk_fairwalk/embeddings/emb_2_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 1.2789768185451638
+Infected nodes fraction per group (%):
+    Group 0:0.7389162667095661
+    Group 1:1.3430126942694187
+    Group 2:2.688172087073326
+Disparity: 0.6637760598956831
+================================================================================
+                        Performing experiment trial 4/5
+================================================================================
+number of attributed ids: 3753, ids with edges: 3753, number of links with attributes: 13986
+using weights from file.
+loaded graph: twitter
+saved graph
+graph shape, num_nodes=3753, num_edges=13986
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.03666667640209198
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_13_infmax_twitter_deepwalk_fairwalk/embeddings/emb_3_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 1.3056221689315215
+Infected nodes fraction per group (%):
+    Group 0:1.1083743534982204
+    Group 1:1.3067150488495827
+    Group 2:2.150537632405758
+Disparity: 0.20416443153946554
+================================================================================
+                        Performing experiment trial 5/5
+================================================================================
+number of attributed ids: 3753, ids with edges: 3753, number of links with attributes: 13986
+using weights from file.
+loaded graph: twitter
+saved graph
+graph shape, num_nodes=3753, num_edges=13986
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.03666667640209198
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_13_infmax_twitter_deepwalk_fairwalk/embeddings/emb_4_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 1.2789768185451638
+Infected nodes fraction per group (%):
+    Group 0:0.9852216579020023
+    Group 1:1.2341197580099106
+    Group 2:3.2258063554763794
+Disparity: 1.0054428393077055
+================================================================================
+results for task influence maximization
+--------------------------------------------------------------------------------
+run 0:
+    infected_nodes_fraction: 1.2789768185451638
+    disparity: 0.46068483681985084
+--------------------------------------------------------------------------------
+run 1:
+    infected_nodes_fraction: 1.385558220090594
+    disparity: 0.33352667703243966
+--------------------------------------------------------------------------------
+run 2:
+    infected_nodes_fraction: 1.2789768185451638
+    disparity: 0.6637760598956831
+--------------------------------------------------------------------------------
+run 3:
+    infected_nodes_fraction: 1.3056221689315215
+    disparity: 0.20416443153946554
+--------------------------------------------------------------------------------
+run 4:
+    infected_nodes_fraction: 1.2789768185451638
+    disparity: 1.0054428393077055
+================================================================================
+final mean of all runs:
+    infected_nodes_fraction: 1.3056221689315213
+    disparities: 0.533518968919029
+
+final std/var of all runs:
+    infected_nodes_fraction: std=0.04127879932008969, var=0.001703939273308237
+    disparities: std=0.28051922860920825, var=0.07869103761950524
+--------------------------------------------------------------------------------
+infected_nodes_fraction values raw:
+[1.2789768185451638, 1.385558220090594, 1.2789768185451638, 1.3056221689315215, 1.2789768185451638]
+disparity values raw:
+[0.46068483681985084, 0.33352667703243966, 0.6637760598956831, 0.20416443153946554, 1.0054428393077055]
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment end time: 2024-02-07 16:56:07.899874
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

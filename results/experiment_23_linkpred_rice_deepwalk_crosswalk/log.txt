@@ -1,0 +1,20 @@
+================================================================================
+--------------------------------------------------------------------------------
+|                         CROSSWALK REPRODUCTION SUITE                         |
+--------------------------------------------------------------------------------
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment start time: 2024-02-13 18:31:41.867746
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Repeating experiment config: 
+'experiments/crosswalk_orig_vs_ext/linkpred_rice_deepwalk_crosswalk_orig.yml' 
+20 times and averaging results
+================================================================================
+                        Performing experiment trial 1/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+something went wrong when parsing 'experiments/crosswalk_orig_vs_ext/linkpred_rice_deepwalk_crosswalk_orig.yml':
+[Errno 2] No such file or directory: 'data/immutable/rice/rice_subset.attr' continuing to next experiment
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment end time: 2024-02-13 18:31:41.869044
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

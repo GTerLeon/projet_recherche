@@ -1,0 +1,170 @@
+================================================================================
+--------------------------------------------------------------------------------
+|                         CROSSWALK REPRODUCTION SUITE                         |
+--------------------------------------------------------------------------------
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment start time: 2024-02-13 19:55:28.316890
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Repeating experiment config: 
+'experiments/node2vec/infmax_rice_node2vec_fairwalk.yml' 
+5 times and averaging results
+================================================================================
+                        Performing experiment trial 1/5
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.006987578235566616
+generating node embeddings..
+generating embeddings using gensim
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_41_infmax_rice_node2vec_fairwalk/embeddings/emb_0_node2vec_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 18.678815489749432
+Infected nodes fraction per group (%):
+    Group 0.0:20.17543911933899
+    Group 1.0:13.40206116437912
+Disparity: 11.469662230184085
+================================================================================
+                        Performing experiment trial 2/5
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.006987578235566616
+generating node embeddings..
+generating embeddings using gensim
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_41_infmax_rice_node2vec_fairwalk/embeddings/emb_1_node2vec_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 17.539863325740317
+Infected nodes fraction per group (%):
+    Group 0.0:19.005848467350006
+    Group 1.0:12.371134012937546
+Disparity: 11.004858972897408
+================================================================================
+                        Performing experiment trial 3/5
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.006987578235566616
+generating node embeddings..
+generating embeddings using gensim
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_41_infmax_rice_node2vec_fairwalk/embeddings/emb_2_node2vec_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 16.856492027334852
+Infected nodes fraction per group (%):
+    Group 0.0:18.421052396297455
+    Group 1.0:11.340206116437912
+Disparity: 12.534596009750182
+================================================================================
+                        Performing experiment trial 4/5
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.006987578235566616
+generating node embeddings..
+generating embeddings using gensim
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_41_infmax_rice_node2vec_fairwalk/embeddings/emb_3_node2vec_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 14.578587699316628
+Infected nodes fraction per group (%):
+    Group 0.0:16.08187109231949
+    Group 1.0:9.278350323438644
+Disparity: 11.571973713148248
+================================================================================
+                        Performing experiment trial 5/5
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.006987578235566616
+generating node embeddings..
+generating embeddings using gensim
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_41_infmax_rice_node2vec_fairwalk/embeddings/emb_4_node2vec_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 16.173120728929387
+Infected nodes fraction per group (%):
+    Group 0.0:16.959063708782196
+    Group 1.0:13.40206116437912
+Disparity: 3.1630667752224895
+================================================================================
+results for task influence maximization
+--------------------------------------------------------------------------------
+run 0:
+    infected_nodes_fraction: 18.678815489749432
+    disparity: 11.469662230184085
+--------------------------------------------------------------------------------
+run 1:
+    infected_nodes_fraction: 17.539863325740317
+    disparity: 11.004858972897408
+--------------------------------------------------------------------------------
+run 2:
+    infected_nodes_fraction: 16.856492027334852
+    disparity: 12.534596009750182
+--------------------------------------------------------------------------------
+run 3:
+    infected_nodes_fraction: 14.578587699316628
+    disparity: 11.571973713148248
+--------------------------------------------------------------------------------
+run 4:
+    infected_nodes_fraction: 16.173120728929387
+    disparity: 3.1630667752224895
+================================================================================
+final mean of all runs:
+    infected_nodes_fraction: 16.765375854214124
+    disparities: 9.948831540240482
+
+final std/var of all runs:
+    infected_nodes_fraction: std=1.3712908376576232, var=1.880438561443746
+    disparities: std=3.429154174936103, var=11.759098355481706
+--------------------------------------------------------------------------------
+infected_nodes_fraction values raw:
+[18.678815489749432, 17.539863325740317, 16.856492027334852, 14.578587699316628, 16.173120728929387]
+disparity values raw:
+[11.469662230184085, 11.004858972897408, 12.534596009750182, 11.571973713148248, 3.1630667752224895]
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment end time: 2024-02-13 19:57:55.392736
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,21 @@
+================================================================================
+--------------------------------------------------------------------------------
+|                         CROSSWALK REPRODUCTION SUITE                         |
+--------------------------------------------------------------------------------
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment start time: 2024-02-13 18:33:51.947458
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Repeating experiment config: 
+'experiments/node2vec/infmax_rice_node2vec_skip.yml' 
+5 times and averaging results
+================================================================================
+                        Performing experiment trial 1/5
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 0, ids with edges: 0, number of links with attributes: 0
+something went wrong when parsing 'experiments/node2vec/infmax_rice_node2vec_skip.yml':
+stack expects a non-empty TensorList continuing to next experiment
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment end time: 2024-02-13 18:33:51.953303
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

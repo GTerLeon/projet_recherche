@@ -1,0 +1,13 @@
+;task;dataset;embedding_method;weighting_method;metric;value;n_runs;extra
+0;infmax;rice;deepwalk;crosswalk;mean_infected_nodes_fraction;20.804859529233102;3;extended_crosswalk
+1;infmax;rice;deepwalk;crosswalk;mean_disparity;30.673998153629242;3;extended_crosswalk
+2;infmax;rice;deepwalk;crosswalk;std_infected_nodes_fraction;1.0898025887932663;3;extended_crosswalk
+3;infmax;rice;deepwalk;crosswalk;std_disparity;13.595893453456908;3;extended_crosswalk
+4;infmax;rice;deepwalk;crosswalk;var_infected_nodes_fraction;1.1876696825405049;3;extended_crosswalk
+5;infmax;rice;deepwalk;crosswalk;var_disparity;184.8483187977524;3;extended_crosswalk
+6;infmax;rice;deepwalk;crosswalk;mean_infected_nodes_fraction;17.3120728929385;3;original_crosswalk
+7;infmax;rice;deepwalk;crosswalk;mean_disparity;26.808051637595895;3;original_crosswalk
+8;infmax;rice;deepwalk;crosswalk;std_infected_nodes_fraction;0.8107120920297108;3;original_crosswalk
+9;infmax;rice;deepwalk;crosswalk;std_disparity;22.134458701029917;3;original_crosswalk
+10;infmax;rice;deepwalk;crosswalk;var_infected_nodes_fraction;0.6572540961631904;3;original_crosswalk
+11;infmax;rice;deepwalk;crosswalk;var_disparity;489.93426198759903;3;original_crosswalk

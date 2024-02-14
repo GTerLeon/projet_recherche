@@ -1,0 +1,24 @@
+================================================================================
+--------------------------------------------------------------------------------
+|                         CROSSWALK REPRODUCTION SUITE                         |
+--------------------------------------------------------------------------------
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment start time: 2024-02-14 10:42:34.570265
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Repeating experiment config: 
+       'experiments/param_sweeps/twitter/alpha_sweep/infmax_twitter_deepwalk_crosswalk_a05.yml' 
+10 times and averaging results
+================================================================================
+                        Performing experiment trial 1/10
+================================================================================
+number of attributed ids: 3753, ids with edges: 3753, number of links with attributes: 13986
+using weights from file.
+loaded graph: twitter
+saved graph
+graph shape, num_nodes=3753, num_edges=13986
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.0449289008975029
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 

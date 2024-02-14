@@ -1,0 +1,145 @@
+================================================================================
+--------------------------------------------------------------------------------
+|                         CROSSWALK REPRODUCTION SUITE                         |
+--------------------------------------------------------------------------------
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment start time: 2024-02-07 15:57:44.193321
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Repeating experiment config: 
+'experiments/infmax_synthetic3_deepwalk_fairwalk.yml' 
+5 times and averaging results
+================================================================================
+                        Performing experiment trial 1/5
+================================================================================
+Generating new graph..
+saved graph
+graph shape, num_nodes=485, num_edges=2824
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.017857149243354797
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_10_infmax_synthetic3_deepwalk_fairwalk/embeddings/emb_0_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 10.721649484536082
+Infected nodes fraction per group (%):
+    Group 1:14.000000059604645
+    Group 2:3.999999910593033
+    Group 3:8.33333358168602
+Disparity: 16.765432517469684
+================================================================================
+                        Performing experiment trial 2/5
+================================================================================
+Generating new graph..
+saved graph
+graph shape, num_nodes=493, num_edges=2850
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.017857149243354797
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_10_infmax_synthetic3_deepwalk_fairwalk/embeddings/emb_1_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 10.344827586206897
+Infected nodes fraction per group (%):
+    Group 1:14.666666090488434
+    Group 2:3.200000151991844
+    Group 3:4.411764815449715
+Disparity: 26.457311278385976
+================================================================================
+                        Performing experiment trial 3/5
+================================================================================
+Generating new graph..
+saved graph
+graph shape, num_nodes=488, num_edges=2920
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.0
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_10_infmax_synthetic3_deepwalk_fairwalk/embeddings/emb_2_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 9.221311475409836
+Infected nodes fraction per group (%):
+    Group 1:13.333334028720856
+    Group 2:2.4000000208616257
+    Group 3:3.17460335791111
+Disparity: 24.815290188803335
+================================================================================
+                        Performing experiment trial 4/5
+================================================================================
+Generating new graph..
+saved graph
+graph shape, num_nodes=486, num_edges=2918
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.0
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_10_infmax_synthetic3_deepwalk_fairwalk/embeddings/emb_3_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 11.11111111111111
+Infected nodes fraction per group (%):
+    Group 1:15.333333611488342
+    Group 2:3.200000151991844
+    Group 3:6.557376682758331
+Disparity: 26.167464224844792
+================================================================================
+                        Performing experiment trial 5/5
+================================================================================
+Generating new graph..
+saved graph
+graph shape, num_nodes=494, num_edges=2832
+performing edge reweighting with fairwalk
+absolute difference between median of weights after reweighting: 0.017857149243354797
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_10_infmax_synthetic3_deepwalk_fairwalk/embeddings/emb_4_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 9.7165991902834
+Infected nodes fraction per group (%):
+    Group 1:13.333334028720856
+    Group 2:3.999999910593033
+    Group 3:4.3478261679410934
+Disparity: 18.663495598004946
+================================================================================
+results for task influence maximization
+--------------------------------------------------------------------------------
+run 0:
+    infected_nodes_fraction: 10.721649484536082
+    disparity: 16.765432517469684
+--------------------------------------------------------------------------------
+run 1:
+    infected_nodes_fraction: 10.344827586206897
+    disparity: 26.457311278385976
+--------------------------------------------------------------------------------
+run 2:
+    infected_nodes_fraction: 9.221311475409836
+    disparity: 24.815290188803335
+--------------------------------------------------------------------------------
+run 3:
+    infected_nodes_fraction: 11.11111111111111
+    disparity: 26.167464224844792
+--------------------------------------------------------------------------------
+run 4:
+    infected_nodes_fraction: 9.7165991902834
+    disparity: 18.663495598004946
+================================================================================
+final mean of all runs:
+    infected_nodes_fraction: 10.223099769509465
+    disparities: 22.573798761501745
+
+final std/var of all runs:
+    infected_nodes_fraction: std=0.680008271343163, var=0.4624112490951167
+    disparities: std=4.0508758066658075, var=16.40959480103036
+--------------------------------------------------------------------------------
+infected_nodes_fraction values raw:
+[10.721649484536082, 10.344827586206897, 9.221311475409836, 11.11111111111111, 9.7165991902834]
+disparity values raw:
+[16.765432517469684, 26.457311278385976, 24.815290188803335, 26.167464224844792, 18.663495598004946]
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment end time: 2024-02-07 16:00:26.922743
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

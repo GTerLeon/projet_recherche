@@ -1,0 +1,65 @@
+BASEDIR: /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results
+CFG_PATH: experiments/infmax_rice_deepwalk_crosswalk.yml
+DATASET: rice
+DATASET_PATHS:
+  RICE: data/immutable/rice/rice_subset.attr
+  RICE_RAW: data/immutable/rice/rice_raw.attr
+  TWITTER: data/immutable/twitter/sample_4000.attr
+EMBEDDINGS:
+  BATCH_SIZE: 32
+  CONTEXT_SIZE: 10
+  DISABLE_PBAR: null
+  EMBEDDING_DIM: 32
+  EMBEDDING_ID: -1
+  LR: 0.025
+  METHOD: deepwalk
+  MIN_COUNT: 0
+  NUM_EPOCHS: 5
+  NUM_NEGATIVE_SAMPLES: 5
+  NUM_WORKERS: 6
+  OPTIMIZER: adam
+  P: 1.0
+  Q: 1.0
+  USE_GENSIM: true
+  WALKS_PER_NODE: 80
+  WALK_LENGTH: 40
+EXPERIMENT_PATH: /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_17_infmax_rice_deepwalk_crosswalk
+EXTRA_LOG_NAME: ''
+GRAPH_KEYS:
+  EMB_KEY: emb
+  GROUP_KEY: groups
+  PRIOR_WEIGHTS_KEY: weights
+  WEIGHT_KEY: adjusted_weights
+GRAPH_WEIGHTING:
+  ALPHA: 0.5
+  METHOD: crosswalk
+  P: 4.0
+  USE_ORIGINAL_CROSSWALK_IMPLEMENTATION: false
+  WALKS_PER_NODE: 1000
+  WALK_LENGTH: 5
+INFLUENCE_MAXIMIZATION:
+  K: 40
+  P_INFECTION: 0.01
+LINK_PREDICTION:
+  TEST_SIZE: 0.1
+NODE_CLASSIFICATION:
+  N_NEIGHBORS: 7
+  TEST_SIZE: 0.5
+RESUME: -1
+RUNS: 5
+RUN_ALL: null
+SEED: 0
+STAGE: 0
+SYNTHETIC:
+  DIRECTED: false
+  EDGE_PROBABILITIES:
+  - - 0.8
+    - 0.8
+  - - 0.8
+    - 0.8
+  INIT_WEIGHTS_STRATEGY: uniform
+  NODES:
+  - 20
+  - 20
+  SELF_CONNECT_PROB: 0.0
+TASK: infmax

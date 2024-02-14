@@ -1,0 +1,610 @@
+================================================================================
+--------------------------------------------------------------------------------
+|                         CROSSWALK REPRODUCTION SUITE                         |
+--------------------------------------------------------------------------------
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment start time: 2024-02-13 19:11:13.402353
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Repeating experiment config: 
+'experiments/crosswalk_orig_vs_ext/linkpred_rice_deepwalk_crosswalk_ext.yml' 
+20 times and averaging results
+================================================================================
+                        Performing experiment trial 1/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006674402393400669
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_0_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 80.94876660341555
+Edge type 1 has accuracy: 87.22382324687801
+Edge type 2 has accuracy: 88.82978723404256
+Accuracy: 83.02277432712215
+Disparity: 11.56288248745559
+================================================================================
+                        Performing experiment trial 2/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006695002317428589
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_1_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 82.09806157354618
+Edge type 1 has accuracy: 86.55139289145053
+Edge type 2 has accuracy: 91.14583333333334
+Accuracy: 83.74741200828157
+Disparity: 13.644801846470918
+================================================================================
+                        Performing experiment trial 3/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006679634563624859
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_2_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 80.02287457110178
+Edge type 1 has accuracy: 86.86964795432921
+Edge type 2 has accuracy: 87.89473684210526
+Accuracy: 82.27225672877847
+Disparity: 12.210592066973506
+================================================================================
+                        Performing experiment trial 4/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006708970293402672
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_3_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.26187761307487
+Edge type 1 has accuracy: 86.04427333974975
+Edge type 2 has accuracy: 89.69072164948454
+Accuracy: 82.97101449275362
+Disparity: 11.912589550244972
+================================================================================
+                        Performing experiment trial 5/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006663525477051735
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_4_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 82.1048632218845
+Edge type 1 has accuracy: 87.63183125599234
+Edge type 2 has accuracy: 91.005291005291
+Accuracy: 84.0320910973085
+Disparity: 13.46058011753582
+================================================================================
+                        Performing experiment trial 6/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006669455207884312
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_5_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 82.53907739229889
+Edge type 1 has accuracy: 89.207258834766
+Edge type 2 has accuracy: 89.17525773195877
+Accuracy: 84.67908902691511
+Disparity: 9.833839702303527
+================================================================================
+                        Performing experiment trial 7/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006642795167863369
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_6_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 82.39543726235742
+Edge type 1 has accuracy: 87.72946859903382
+Edge type 2 has accuracy: 87.43718592964824
+Accuracy: 84.08385093167702
+Disparity: 5.995172120399752
+================================================================================
+                        Performing experiment trial 8/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006689951755106449
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_7_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 82.36184708554126
+Edge type 1 has accuracy: 86.29737609329446
+Edge type 2 has accuracy: 85.49222797927462
+Accuracy: 83.56625258799171
+Disparity: 2.8817707329141657
+================================================================================
+                        Performing experiment trial 9/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.00669507123529911
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_8_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.90764572293718
+Edge type 1 has accuracy: 88.10916179337231
+Edge type 2 has accuracy: 91.3265306122449
+Accuracy: 84.0320910973085
+Disparity: 15.280628471838677
+================================================================================
+                        Performing experiment trial 10/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006748545914888382
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_9_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 82.32840348881304
+Edge type 1 has accuracy: 85.72815533980582
+Edge type 2 has accuracy: 88.3248730964467
+Accuracy: 83.54037267080744
+Disparity: 6.028767056806334
+================================================================================
+                        Performing experiment trial 11/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.0066735753789544106
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_10_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.86666666666666
+Edge type 1 has accuracy: 86.76190476190476
+Edge type 2 has accuracy: 91.53439153439153
+Accuracy: 83.66977225672878
+Disparity: 15.578321124517492
+================================================================================
+                        Performing experiment trial 12/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006684070453047752
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_11_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.62182644941267
+Edge type 1 has accuracy: 86.64085188770572
+Edge type 2 has accuracy: 89.58333333333334
+Accuracy: 83.3592132505176
+Disparity: 10.803822807867993
+================================================================================
+                        Performing experiment trial 13/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006674068979918957
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_12_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.78014454165083
+Edge type 1 has accuracy: 86.19367209971237
+Edge type 2 has accuracy: 91.14583333333334
+Accuracy: 83.4368530020704
+Disparity: 14.63547254802162
+================================================================================
+                        Performing experiment trial 14/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006673851050436497
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_13_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.88736681887366
+Edge type 1 has accuracy: 87.5239923224568
+Edge type 2 has accuracy: 90.20618556701031
+Accuracy: 83.82505175983437
+Disparity: 12.01871700368025
+================================================================================
+                        Performing experiment trial 15/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.0066690463572740555
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_14_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.78030303030303
+Edge type 1 has accuracy: 88.64077669902912
+Edge type 2 has accuracy: 90.20618556701031
+Accuracy: 84.0320910973085
+Disparity: 13.390233378402977
+================================================================================
+                        Performing experiment trial 16/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006723945029079914
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_15_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.53787590407309
+Edge type 1 has accuracy: 87.42802303262955
+Edge type 2 has accuracy: 93.33333333333333
+Accuracy: 83.7215320910973
+Disparity: 23.188815434347845
+================================================================================
+                        Performing experiment trial 17/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.00669419951736927
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_16_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.4969604863222
+Edge type 1 has accuracy: 85.0674373795761
+Edge type 2 has accuracy: 88.14432989690721
+Accuracy: 82.78985507246377
+Disparity: 7.378121432138844
+================================================================================
+                        Performing experiment trial 18/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006700554862618446
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_17_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.34498480243161
+Edge type 1 has accuracy: 87.29547641963427
+Edge type 2 has accuracy: 89.11917098445595
+Accuracy: 83.33333333333334
+Disparity: 11.019131460548598
+================================================================================
+                        Performing experiment trial 19/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006651134230196476
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_18_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.89425637124383
+Edge type 1 has accuracy: 88.68648130393096
+Edge type 2 has accuracy: 89.0625
+Accuracy: 84.08385093167702
+Disparity: 10.851047368579296
+================================================================================
+                        Performing experiment trial 20/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.006714001297950745
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_37_linkpred_rice_deepwalk_crosswalk/embeddings/emb_19_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing link prediction task..
+Edge type 0 has accuracy: 81.69014084507043
+Edge type 1 has accuracy: 87.94258373205741
+Edge type 2 has accuracy: 93.22916666666666
+Accuracy: 83.9544513457557
+Disparity: 22.24334645455558
+================================================================================
+results for task link prediciton
+--------------------------------------------------------------------------------
+run 0:
+    accuracy: 83.02277432712215
+    disparity: 11.56288248745559
+--------------------------------------------------------------------------------
+run 1:
+    accuracy: 83.74741200828157
+    disparity: 13.644801846470918
+--------------------------------------------------------------------------------
+run 2:
+    accuracy: 82.27225672877847
+    disparity: 12.210592066973506
+--------------------------------------------------------------------------------
+run 3:
+    accuracy: 82.97101449275362
+    disparity: 11.912589550244972
+--------------------------------------------------------------------------------
+run 4:
+    accuracy: 84.0320910973085
+    disparity: 13.46058011753582
+--------------------------------------------------------------------------------
+run 5:
+    accuracy: 84.67908902691511
+    disparity: 9.833839702303527
+--------------------------------------------------------------------------------
+run 6:
+    accuracy: 84.08385093167702
+    disparity: 5.995172120399752
+--------------------------------------------------------------------------------
+run 7:
+    accuracy: 83.56625258799171
+    disparity: 2.8817707329141657
+--------------------------------------------------------------------------------
+run 8:
+    accuracy: 84.0320910973085
+    disparity: 15.280628471838677
+--------------------------------------------------------------------------------
+run 9:
+    accuracy: 83.54037267080744
+    disparity: 6.028767056806334
+--------------------------------------------------------------------------------
+run 10:
+    accuracy: 83.66977225672878
+    disparity: 15.578321124517492
+--------------------------------------------------------------------------------
+run 11:
+    accuracy: 83.3592132505176
+    disparity: 10.803822807867993
+--------------------------------------------------------------------------------
+run 12:
+    accuracy: 83.4368530020704
+    disparity: 14.63547254802162
+--------------------------------------------------------------------------------
+run 13:
+    accuracy: 83.82505175983437
+    disparity: 12.01871700368025
+--------------------------------------------------------------------------------
+run 14:
+    accuracy: 84.0320910973085
+    disparity: 13.390233378402977
+--------------------------------------------------------------------------------
+run 15:
+    accuracy: 83.7215320910973
+    disparity: 23.188815434347845
+--------------------------------------------------------------------------------
+run 16:
+    accuracy: 82.78985507246377
+    disparity: 7.378121432138844
+--------------------------------------------------------------------------------
+run 17:
+    accuracy: 83.33333333333334
+    disparity: 11.019131460548598
+--------------------------------------------------------------------------------
+run 18:
+    accuracy: 84.08385093167702
+    disparity: 10.851047368579296
+--------------------------------------------------------------------------------
+run 19:
+    accuracy: 83.9544513457557
+    disparity: 22.24334645455558
+================================================================================
+final average of all runs:
+    accuracy: 83.60766045548652
+    disparity: 12.195932658280189
+
+final std/var of all runs:
+    accuracy: std=0.5346818448677222, var=0.2858846752311509
+    disparity: std=4.7513057505477985, var=22.57490633518858
+--------------------------------------------------------------------------------
+accuracy values raw:
+[83.02277432712215, 83.74741200828157, 82.27225672877847, 82.97101449275362, 84.0320910973085, 84.67908902691511, 84.08385093167702, 83.56625258799171, 84.0320910973085, 83.54037267080744, 83.66977225672878, 83.3592132505176, 83.4368530020704, 83.82505175983437, 84.0320910973085, 83.7215320910973, 82.78985507246377, 83.33333333333334, 84.08385093167702, 83.9544513457557]
+disparity values raw:
+[11.56288248745559, 13.644801846470918, 12.210592066973506, 11.912589550244972, 13.46058011753582, 9.833839702303527, 5.995172120399752, 2.8817707329141657, 15.280628471838677, 6.028767056806334, 15.578321124517492, 10.803822807867993, 14.63547254802162, 12.01871700368025, 13.390233378402977, 23.188815434347845, 7.378121432138844, 11.019131460548598, 10.851047368579296, 22.24334645455558]
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment end time: 2024-02-13 19:30:34.078237
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

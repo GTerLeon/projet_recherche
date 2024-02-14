@@ -1,0 +1,22 @@
+================================================================================
+--------------------------------------------------------------------------------
+|                         CROSSWALK REPRODUCTION SUITE                         |
+--------------------------------------------------------------------------------
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment start time: 2024-02-14 10:48:47.815817
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Repeating experiment config: 
+       'experiments/facebook_large/facebook_large_crosswalk.yml' 
+2 times and averaging results
+================================================================================
+                        Performing experiment trial 1/2
+================================================================================
+number of attributed ids: 22470, ids with edges: 22470, number of links with attributes: 171002
+no edge weights given, initializing all as uniform normalized.
+loaded graph: facebook_large
+saved graph
+graph shape, num_nodes=22470, num_edges=171002
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.0
+generating node embeddings..

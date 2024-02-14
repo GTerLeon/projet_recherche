@@ -1,0 +1,610 @@
+================================================================================
+--------------------------------------------------------------------------------
+|                         CROSSWALK REPRODUCTION SUITE                         |
+--------------------------------------------------------------------------------
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment start time: 2024-02-13 18:53:07.600945
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Repeating experiment config: 
+'experiments/crosswalk_orig_vs_ext/infmax_rice_deepwalk_crosswalk_orig.yml' 
+20 times and averaging results
+================================================================================
+                        Performing experiment trial 1/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007378223352134228
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_0_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 18.678815489749432
+Infected nodes fraction per group (%):
+    Group 0.0:20.17543911933899
+    Group 1.0:13.40206116437912
+Disparity: 11.469662230184085
+================================================================================
+                        Performing experiment trial 2/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.0072281090542674065
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_1_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 17.539863325740317
+Infected nodes fraction per group (%):
+    Group 0.0:19.005848467350006
+    Group 1.0:12.371134012937546
+Disparity: 11.004858972897408
+================================================================================
+                        Performing experiment trial 3/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007334022782742977
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_2_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 18.906605922551254
+Infected nodes fraction per group (%):
+    Group 0.0:19.005848467350006
+    Group 1.0:18.55670064687729
+Disparity: 0.05043344115884807
+================================================================================
+                        Performing experiment trial 4/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007354713976383209
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_3_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 21.184510250569478
+Infected nodes fraction per group (%):
+    Group 0.0:23.68421107530594
+    Group 1.0:12.371134012937546
+Disparity: 31.99642815477147
+================================================================================
+                        Performing experiment trial 5/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007316939532756805
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_4_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 22.779043280182233
+Infected nodes fraction per group (%):
+    Group 0.0:23.976607620716095
+    Group 1.0:18.55670064687729
+Disparity: 7.343847901266631
+================================================================================
+                        Performing experiment trial 6/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007362799718976021
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_5_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 17.539863325740317
+Infected nodes fraction per group (%):
+    Group 0.0:19.883041083812714
+    Group 1.0:9.278350323438644
+Disparity: 28.11486653079079
+================================================================================
+                        Performing experiment trial 7/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007372887805104256
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_6_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 17.539863325740317
+Infected nodes fraction per group (%):
+    Group 0.0:19.005848467350006
+    Group 1.0:12.371134012937546
+Disparity: 11.004858972897408
+================================================================================
+                        Performing experiment trial 8/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007436641491949558
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_7_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 22.779043280182233
+Infected nodes fraction per group (%):
+    Group 0.0:24.561403691768646
+    Group 1.0:16.49484485387802
+Disparity: 16.267342871287838
+================================================================================
+                        Performing experiment trial 9/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007345998659729958
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_8_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 18.906605922551254
+Infected nodes fraction per group (%):
+    Group 0.0:21.345029771327972
+    Group 1.0:10.309278219938278
+Disparity: 30.44695307600001
+================================================================================
+                        Performing experiment trial 10/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007366456091403961
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_9_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 21.184510250569478
+Infected nodes fraction per group (%):
+    Group 0.0:22.807016968727112
+    Group 1.0:15.463916957378387
+Disparity: 13.480279444167408
+================================================================================
+                        Performing experiment trial 11/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007369588129222393
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_10_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 15.489749430523919
+Infected nodes fraction per group (%):
+    Group 0.0:17.25146174430847
+    Group 1.0:9.278350323438644
+Disparity: 15.892626432401219
+================================================================================
+                        Performing experiment trial 12/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007375271059572697
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_11_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 16.40091116173121
+Infected nodes fraction per group (%):
+    Group 0.0:19.883041083812714
+    Group 1.0:4.123711213469505
+Disparity: 62.08911949057292
+================================================================================
+                        Performing experiment trial 13/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.0074195945635437965
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_12_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 15.717539863325742
+Infected nodes fraction per group (%):
+    Group 0.0:17.836257815361023
+    Group 1.0:8.24742242693901
+Disparity: 22.986441026563583
+================================================================================
+                        Performing experiment trial 14/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007358545437455177
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_13_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 20.72892938496583
+Infected nodes fraction per group (%):
+    Group 0.0:21.929824352264404
+    Group 1.0:16.49484485387802
+Disparity: 7.384750536970075
+================================================================================
+                        Performing experiment trial 15/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007307936437427998
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_14_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 17.995444191343964
+Infected nodes fraction per group (%):
+    Group 0.0:20.76023370027542
+    Group 1.0:8.24742242693901
+Disparity: 39.14261149053369
+================================================================================
+                        Performing experiment trial 16/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007362505421042442
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_15_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 19.362186788154897
+Infected nodes fraction per group (%):
+    Group 0.0:21.052631735801697
+    Group 1.0:13.40206116437912
+Disparity: 14.632807517079293
+================================================================================
+                        Performing experiment trial 17/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.00738921482115984
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_16_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 16.62870159453303
+Infected nodes fraction per group (%):
+    Group 0.0:17.836257815361023
+    Group 1.0:12.371134012937546
+Disparity: 7.466894543953911
+================================================================================
+                        Performing experiment trial 18/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007244432345032692
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_17_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 17.539863325740317
+Infected nodes fraction per group (%):
+    Group 0.0:17.836257815361023
+    Group 1.0:16.49484485387802
+Disparity: 0.44984718330864926
+================================================================================
+                        Performing experiment trial 19/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007398032583296299
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_18_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 18.223234624145785
+Infected nodes fraction per group (%):
+    Group 0.0:20.467835664749146
+    Group 1.0:10.309278219938278
+Disparity: 25.799072339880574
+================================================================================
+                        Performing experiment trial 20/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 445, ids with edges: 439, number of links with attributes: 19320
+Found unconnected nodes in graph! Removing 6 unconnected nodes
+no edge weights given, initializing all as uniform normalized.
+detected rice_raw dataset!
+before rice parsing! num nodes:439, num edges:19320
+after rice parsing! num nodes:439, num edges:19320
+loaded graph: rice
+saved graph
+graph shape, num_nodes=439, num_edges=19320
+performing edge reweighting with crosswalk
+absolute difference between median of weights after reweighting: 0.007398194633424282
+generating node embeddings..
+generating embeddings using gensim
+Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+saving embedding file to /home/leon/M1/Projet_Recherche/crosswalk-reproduction-main/results/experiment_36_infmax_rice_deepwalk_crosswalk/embeddings/emb_19_deepwalk_ed32_wl40_cs10_wpn80_nns5.pt
+performing influence maximization task..
+Infected nodes fraction (%): 18.906605922551254
+Infected nodes fraction per group (%):
+    Group 0.0:21.63742631673813
+    Group 1.0:9.278350323438644
+Disparity: 38.18668985203791
+================================================================================
+results for task influence maximization
+--------------------------------------------------------------------------------
+run 0:
+    infected_nodes_fraction: 18.678815489749432
+    disparity: 11.469662230184085
+--------------------------------------------------------------------------------
+run 1:
+    infected_nodes_fraction: 17.539863325740317
+    disparity: 11.004858972897408
+--------------------------------------------------------------------------------
+run 2:
+    infected_nodes_fraction: 18.906605922551254
+    disparity: 0.05043344115884807
+--------------------------------------------------------------------------------
+run 3:
+    infected_nodes_fraction: 21.184510250569478
+    disparity: 31.99642815477147
+--------------------------------------------------------------------------------
+run 4:
+    infected_nodes_fraction: 22.779043280182233
+    disparity: 7.343847901266631
+--------------------------------------------------------------------------------
+run 5:
+    infected_nodes_fraction: 17.539863325740317
+    disparity: 28.11486653079079
+--------------------------------------------------------------------------------
+run 6:
+    infected_nodes_fraction: 17.539863325740317
+    disparity: 11.004858972897408
+--------------------------------------------------------------------------------
+run 7:
+    infected_nodes_fraction: 22.779043280182233
+    disparity: 16.267342871287838
+--------------------------------------------------------------------------------
+run 8:
+    infected_nodes_fraction: 18.906605922551254
+    disparity: 30.44695307600001
+--------------------------------------------------------------------------------
+run 9:
+    infected_nodes_fraction: 21.184510250569478
+    disparity: 13.480279444167408
+--------------------------------------------------------------------------------
+run 10:
+    infected_nodes_fraction: 15.489749430523919
+    disparity: 15.892626432401219
+--------------------------------------------------------------------------------
+run 11:
+    infected_nodes_fraction: 16.40091116173121
+    disparity: 62.08911949057292
+--------------------------------------------------------------------------------
+run 12:
+    infected_nodes_fraction: 15.717539863325742
+    disparity: 22.986441026563583
+--------------------------------------------------------------------------------
+run 13:
+    infected_nodes_fraction: 20.72892938496583
+    disparity: 7.384750536970075
+--------------------------------------------------------------------------------
+run 14:
+    infected_nodes_fraction: 17.995444191343964
+    disparity: 39.14261149053369
+--------------------------------------------------------------------------------
+run 15:
+    infected_nodes_fraction: 19.362186788154897
+    disparity: 14.632807517079293
+--------------------------------------------------------------------------------
+run 16:
+    infected_nodes_fraction: 16.62870159453303
+    disparity: 7.466894543953911
+--------------------------------------------------------------------------------
+run 17:
+    infected_nodes_fraction: 17.539863325740317
+    disparity: 0.44984718330864926
+--------------------------------------------------------------------------------
+run 18:
+    infected_nodes_fraction: 18.223234624145785
+    disparity: 25.799072339880574
+--------------------------------------------------------------------------------
+run 19:
+    infected_nodes_fraction: 18.906605922551254
+    disparity: 38.18668985203791
+================================================================================
+final mean of all runs:
+    infected_nodes_fraction: 18.701594533029613
+    disparities: 19.760519600436183
+
+final std/var of all runs:
+    infected_nodes_fraction: std=2.0638617753983066, var=4.2595254279502495
+    disparities: std=14.869932975218092, var=221.11490668747837
+--------------------------------------------------------------------------------
+infected_nodes_fraction values raw:
+[18.678815489749432, 17.539863325740317, 18.906605922551254, 21.184510250569478, 22.779043280182233, 17.539863325740317, 17.539863325740317, 22.779043280182233, 18.906605922551254, 21.184510250569478, 15.489749430523919, 16.40091116173121, 15.717539863325742, 20.72892938496583, 17.995444191343964, 19.362186788154897, 16.62870159453303, 17.539863325740317, 18.223234624145785, 18.906605922551254]
+disparity values raw:
+[11.469662230184085, 11.004858972897408, 0.05043344115884807, 31.99642815477147, 7.343847901266631, 28.11486653079079, 11.004858972897408, 16.267342871287838, 30.44695307600001, 13.480279444167408, 15.892626432401219, 62.08911949057292, 22.986441026563583, 7.384750536970075, 39.14261149053369, 14.632807517079293, 7.466894543953911, 0.44984718330864926, 25.799072339880574, 38.18668985203791]
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment end time: 2024-02-13 19:11:13.388504
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

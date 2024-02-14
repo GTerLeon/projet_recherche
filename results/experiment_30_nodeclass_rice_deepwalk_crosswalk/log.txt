@@ -1,0 +1,21 @@
+================================================================================
+--------------------------------------------------------------------------------
+|                         CROSSWALK REPRODUCTION SUITE                         |
+--------------------------------------------------------------------------------
+================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment start time: 2024-02-13 18:33:18.273502
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Repeating experiment config: 
+'experiments/crosswalk_orig_vs_ext/nodeclass_rice_deepwalk_crosswalk_ext.yml' 
+20 times and averaging results
+================================================================================
+                        Performing experiment trial 1/20
+================================================================================
+reading: data/immutable/rice/rice_subset.attr
+number of attributed ids: 0, ids with edges: 0, number of links with attributes: 0
+something went wrong when parsing 'experiments/crosswalk_orig_vs_ext/nodeclass_rice_deepwalk_crosswalk_ext.yml':
+stack expects a non-empty TensorList continuing to next experiment
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             Experiment end time: 2024-02-13 18:33:18.287879
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
