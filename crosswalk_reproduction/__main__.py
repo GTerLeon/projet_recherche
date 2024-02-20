@@ -14,11 +14,13 @@ from dgl.data.utils import load_graphs, save_graphs
 from .config import get_cfg_defaults, update_config
 from .data_provider import read_graph, synthesize_graph
 from .node_embeddor import generate_embeddings
-from .preprocessor import get_crosswalk_weights, get_fairwalk_weights
+from .preprocessor import get_crosswalk_weights, get_fairwalk_weights, get_moonwalk_weights
 from .tasks import (perform_influence_maximization_single,
                     perform_link_prediction_single,
                     perform_node_classification_single)
 from .utils import filename_parser
+
+import time
 
 logging.getLogger('gensim').setLevel(logging.WARNING)
 logger = logging.getLogger()
@@ -104,6 +106,17 @@ def reweight_edges(cfg, graph):
                                                      use_original_crosswalk_implementation=cfg.GRAPH_WEIGHTING.USE_ORIGINAL_CROSSWALK_IMPLEMENTATION
                                                      )
 
+        elif cfg.GRAPH_WEIGHTING.METHOD == 'moonwalk':
+            logger.info("performing edge reweighting with moonwalk")
+            # reweighting graph
+            adjusted_weights = get_moonwalk_weights(graph,
+                                                     cfg.GRAPH_WEIGHTING.ALPHA,
+                                                     cfg.GRAPH_WEIGHTING.P,
+                                                     cfg.GRAPH_WEIGHTING.WALK_LENGTH,
+                                                     cfg.GRAPH_WEIGHTING.WALKS_PER_NODE,
+                                                     cfg.GRAPH_KEYS.GROUP_KEY,
+                                                     cfg.GRAPH_KEYS.PRIOR_WEIGHTS_KEY
+                                                     )
         elif cfg.GRAPH_WEIGHTING.METHOD == 'fairwalk':
             logger.info("performing edge reweighting with fairwalk")
             adjusted_weights = get_fairwalk_weights(graph, cfg.GRAPH_KEYS.GROUP_KEY)
@@ -174,6 +187,7 @@ def add_embeddings(cfg, graph):
 
 def perform_tasks(cfg, graph):
     result_dict = {}
+
     if cfg.TASK in ['linkpred', 'all']:
         logger.info('performing link prediction task..')
         results = perform_link_prediction_single(
@@ -196,7 +210,6 @@ def perform_tasks(cfg, graph):
         results = perform_node_classification_single(graph, cfg.GRAPH_KEYS.GROUP_KEY, "college", cfg.GRAPH_KEYS.EMB_KEY,
                                                      cfg.NODE_CLASSIFICATION.TEST_SIZE, cfg.NODE_CLASSIFICATION.N_NEIGHBORS)
         result_dict['nodeclass'] = results
-
     return result_dict
 
 
@@ -222,6 +235,8 @@ def perform_experiment(cfg):
     """
     logger
     graph = load_or_construct_graph(cfg)
+    
+    start_time = time.time()
 
     logger.info(f"graph shape, num_nodes={graph.num_nodes()}, num_edges={graph.num_edges()}")
     prior_weight_median = graph.edata[cfg.GRAPH_KEYS.PRIOR_WEIGHTS_KEY].median()
@@ -230,6 +245,13 @@ def perform_experiment(cfg):
     logger.info(f"absolute difference between median of weights after reweighting: {torch.absolute(prior_weight_median - weight_median)}")
     graph = add_embeddings(cfg, graph)
     result_dict = perform_tasks(cfg, graph)
+    end_time = time.time()
+    if cfg.TASK in ['linkpred', 'all']:
+        result_dict['linkpred']['exec_time'] = float(end_time - start_time)
+    elif cfg.TASK in ['infmax', 'all']:
+        result_dict['infmax']['exec_time'] = float(end_time - start_time)
+    elif cfg.TASK in ['nodeclass', 'all']:
+        result_dict['nodeclass']['exec_time'] = float(end_time - start_time)
     return result_dict
 
 
@@ -281,15 +303,18 @@ def parse_linkpred_runs(results):
         task_res = [r['linkpred'] for r in results]
         accuracies = []
         disparities = []
-
+        exec_time = []
         for run_idx in range(len(task_res)):
             logger.info("-" * 80)
             logger.info(f"run {run_idx}:")
             logger.info(f"    accuracy: {task_res[run_idx]['accuracy']}")
             logger.info(f"    disparity: {task_res[run_idx]['disparity']}")
+            logger.info(f"    exec_time: {task_res[run_idx]['exec_time']}")
 
             accuracies.append(task_res[run_idx]['accuracy'])
             disparities.append(task_res[run_idx]['disparity'])
+            exec_time.append(task_res[run_idx]['exec_time'])
+            
 
         logger.info("=" * 80)
         logger.info("final average of all runs:")
@@ -305,6 +330,8 @@ def parse_linkpred_runs(results):
         logger.info(f"{accuracies}")
         logger.info("disparity values raw:")
         logger.info(f"{disparities}")
+        logger.info("exec_time values raw:")
+        logger.info(f"{exec_time}")
 
         logger.info("=" * 80)
 
@@ -365,13 +392,11 @@ def write_run_all_results(results, target_path):
     header = ['task', 'dataset', 'embedding_method',
               'weighting_method', 'metric', 'value', 'n_runs', 'extra']
     row_list = []
-
     for exp_idx, [exp_result, cfg] in enumerate(results):
         task = cfg.TASK
         dataset = cfg.DATASET
         emb_method = cfg.EMBEDDINGS.METHOD
         graph_w_method = cfg.GRAPH_WEIGHTING.METHOD
-
         if dataset == 'synthetic':
             dataset += str(len(cfg.SYNTHETIC.NODES))
 
@@ -386,30 +411,41 @@ def write_run_all_results(results, target_path):
                 "std_disparity": np.std(disp),
                 "var_accuracy": np.var(acc),
                 "var_disparity": np.var(disp),
+                "mean_exec": np.mean(exec),
+                "std_exec": np.std(exec),
+                "var_exec": np.var(exec)
             }
         if task == 'linkpred':
             exp_result = [r['linkpred'] for r in exp_result]
             disp = [r['disparity'] for r in exp_result]
             acc = [r['accuracy'] for r in exp_result]
+            exec = [r['exec_time'] for r in exp_result]
             result_dict = {
                 "mean_accuracy": np.mean(acc),
                 "mean_disparity": np.mean(disp),
                 "std_accuracy": np.std(acc),
                 "std_disparity": np.std(disp),
                 "var_accuracy": np.var(acc),
-                "var_disparity": np.var(disp)
+                "var_disparity": np.var(disp),
+                "mean_exec": np.mean(exec),
+                "std_exec": np.std(exec),
+                "var_exec": np.var(exec)
             }
         if task == 'infmax':
             exp_result = [r['infmax'] for r in exp_result]
             inf_frac = [r['infected_nodes_fraction'] for r in exp_result]
             disp = [r['disparity'] for r in exp_result]
+            exec = [r['exec_time'] for r in exp_result]
             result_dict = {
                 "mean_infected_nodes_fraction": np.mean(inf_frac),
                 "mean_disparity": np.mean(disp),
                 "std_infected_nodes_fraction": np.std(inf_frac),
                 "std_disparity": np.std(disp),
                 "var_infected_nodes_fraction": np.var(inf_frac),
-                "var_disparity": np.var(disp)
+                "var_disparity": np.var(disp),
+                "mean_exec": np.mean(exec),
+                "std_exec": np.std(exec),
+                "var_exec": np.var(exec)
             }
         extra = cfg.EXTRA_LOG_NAME
         for metric, value in result_dict.items():
@@ -458,7 +494,7 @@ def reproduce(cfg):
                 run_all_results.append([results, cfg])
         except Exception as e:
             logger.info(
-                f"something went wrong when parsing '{experiment_fp}':\n{e} continuing to next experiment")
+                f"something went wrong when parsing '{experiment_fp}':\n{e} continuing to next experiment, {cfg.RUNS}")
 
         now = datetime.datetime.now()
         logger.info("+" * 80)
@@ -593,7 +629,7 @@ def main():
 
         now = datetime.datetime.now()
         logger.info("+" * 80)
-        logger.info(f"             Experiment end time: {now}")
+        logger.info(f"             Experiment end time: {now} bla   bbla{results}")
         logger.info("+" * 80)
 
 

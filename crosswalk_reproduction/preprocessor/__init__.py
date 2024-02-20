@@ -1,2 +1,3 @@
 from .crosswalk import estimate_node_colorfulness, get_crosswalk_weights
 from .fairwalk import get_fairwalk_weights
+from .moonwalk import estimate_node_colorfulness, get_moonwalk_weights

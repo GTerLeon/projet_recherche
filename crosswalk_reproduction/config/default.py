@@ -167,8 +167,8 @@ def verify_config(cfg):
     cfg.DATASET = cfg.DATASET.lower()
     cfg.TASK = cfg.TASK.lower()
     assert cfg.DATASET in ['rice', 'twitter', 'synthetic', 'facebook_large']
-    assert cfg.TASK in ['linkpred', 'infmax', 'nodeclass', 'all']
-    assert cfg.GRAPH_WEIGHTING.METHOD in ['crosswalk', 'fairwalk', 'skip']
+    assert cfg.TASK in ['linkpred', 'infmax', 'nodeclass', 'moonwalk', 'all']
+    assert cfg.GRAPH_WEIGHTING.METHOD in ['crosswalk', 'fairwalk', 'moonwalk', 'skip']
     assert cfg.RUNS > 0
 
 

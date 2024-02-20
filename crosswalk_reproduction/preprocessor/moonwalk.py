@@ -5,7 +5,7 @@ from crosswalk_reproduction.graphs.graph import get_uniform_weights
 import logging
 logger = logging.getLogger(__name__)
 
-def estimate_node_colorfulness(g, node_idx, walk_length, walks_per_node, group_key, prob=None):
+def estimate_node_colorfulness(g, P, node_idx, walk_length, walks_per_node, group_key, prob=None):
     """Estimate proximity of a node to those of another group according to equation (3) of https://arxiv.org/abs/2105.02725.
 
     Args:
@@ -33,15 +33,15 @@ def estimate_node_colorfulness(g, node_idx, walk_length, walks_per_node, group_k
 
     # Compute colorfulness
     #Original colorfulness
-    colorfulness = torch.sum(visited_groups != g.ndata[group_key][node_idx]) / len(visited_nodes)
+    #colorfulness = torch.sum(visited_groups != g.ndata[group_key][node_idx]) / len(visited_nodes)
 
     #moonwalk 
-    # _, counts = torch.unique(visited_groups, return_counts=True)
-    # colorfulness = torch.sum(counts**2) / (counts**P).sum()**(1/P)
+    _, counts = torch.unique(visited_groups, return_counts=True)
+    colorfulness = torch.sum(counts**2) / (counts**P).sum()**(1/P)
     return colorfulness.item()
 
 
-def get_crosswalk_weights(g, alpha, p, walk_length, walks_per_node, group_key, prior_weights_key, use_original_crosswalk_implementation=False):
+def get_moonwalk_weights(g, alpha, p, walk_length, walks_per_node, group_key, prior_weights_key):
     """Computes new weights for each edge according to crosswalk strategy according to https://arxiv.org/abs/2105.02725.
 
     Args:
@@ -77,13 +77,13 @@ def get_crosswalk_weights(g, alpha, p, walk_length, walks_per_node, group_key, p
 
     # Pre-Compute colorfulness and normalization factors from formula (4) for each node
     colorfulnesses = torch.tensor([estimate_node_colorfulness(
-        g, node, walk_length, walks_per_node, group_key, prob=None) for node in g.nodes()])
+        g, p, node, walk_length, walks_per_node, group_key, prob=None) for node in g.nodes()])
 
     # In the original implementation, 0.001 was added to all colorfulness estimates
     # This avoided edge cases when colorfulnesses are 0
     # These edge cases can be handled by this implementation, making the addition of 0.001 optional
-    if use_original_crosswalk_implementation:
-        colorfulnesses = colorfulnesses + 0.001
+    # if use_original_crosswalk_implementation:
+    #     colorfulnesses = colorfulnesses + 0.001
 
     # Compute new weights
     new_weights = torch.empty_like(prior_weights)

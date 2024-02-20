@@ -6,6 +6,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
+import time
+
 logger = logging.getLogger(__name__)
 
 def get_edge_types(g, group_key, same_id_for_both_directions = True):
@@ -55,7 +57,7 @@ def perform_link_prediction_single(graph, group_key, test_size=0.1, seed=42):
     Returns:
         dict: Dictionary containing the results.
     """
-
+    start_time = time.time()
     edge_type_dict = get_edge_types(graph, group_key)
 
     # Get positive samples
@@ -118,12 +120,13 @@ def perform_link_prediction_single(graph, group_key, test_size=0.1, seed=42):
         accuracies.append(accuracy_group * 100)
         n_samples.append(len(y_pred_group))
         logger.info(f"Edge type {edge_type} has accuracy: {accuracy_group * 100}")
-
+    end_time = time.time()
     accuracy = accuracy_score(y_test[:, 0].squeeze(), y_pred) * 100
     disparity = np.var(np.array(accuracies))
+    exec_time = end_time - start_time
 
     logger.info(f"Accuracy: {accuracy}")
     logger.info(f"Disparity: {disparity}")
     results = {'accuracy': float(accuracy), 'disparity': float(disparity)}
-
+    #results['exec_time'] = float(exec_time)
     return results
