@@ -34,10 +34,6 @@ def estimate_node_colorfulness(g, node_idx, walk_length, walks_per_node, group_k
     # Compute colorfulness
     #Original colorfulness
     colorfulness = torch.sum(visited_groups != g.ndata[group_key][node_idx]) / len(visited_nodes)
-
-    #moonwalk 
-    # _, counts = torch.unique(visited_groups, return_counts=True)
-    # colorfulness = torch.sum(counts**2) / (counts**P).sum()**(1/P)
     return colorfulness.item()
 
 

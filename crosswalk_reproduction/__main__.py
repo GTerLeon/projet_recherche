@@ -59,10 +59,10 @@ def load_or_construct_graph(cfg):
                 graph = read_graph(cfg.DATASET_PATHS.TWITTER,
                                    weight_key=cfg.GRAPH_KEYS.PRIOR_WEIGHTS_KEY,
                                    group_key=cfg.GRAPH_KEYS.GROUP_KEY)
-            elif cfg.DATASET.lower() == 'facebook_large':
-                graph = read_graph(cfg.DATASET_PATHS.FACEBOOK_LARGE,
-                                   weight_key=cfg.GRAPH_KEYS.PRIOR_WEIGHTS_KEY,
-                                   group_key=cfg.GRAPH_KEYS.GROUP_KEY)
+            # elif cfg.DATASET.lower() == 'facebook_large':
+            #     graph = read_graph(cfg.DATASET_PATHS.FACEBOOK_LARGE,
+            #                        weight_key=cfg.GRAPH_KEYS.PRIOR_WEIGHTS_KEY,
+            #                        group_key=cfg.GRAPH_KEYS.GROUP_KEY)
             else:
                 raise NotImplementedError(f"no known dataset: {cfg.DATASET}")
             logger.info(f"loaded graph: {cfg.DATASET.lower()}")
